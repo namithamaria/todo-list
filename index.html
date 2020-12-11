@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SIGN IN</title>
+    <link rel="stylesheet" href="CSS/style.css">
+     <link rel="stylesheet" href="CSS/bootstrap.min.css"> 
+    <!-- <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'> -->
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    
+</head>
+<body onLoad="document.f1.email.focus()";>
+    <style>
+        body {
+          background-image: url('images/bg1.jpg');
+        }
+        </style>
+    <header>
+        <!-- <img src="Images/KeralaLogo.png" alt="logo" > -->
+        <div class="head-tag">
+        <!-- <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="districts.html">DISTRICTS</a>
+        <a href="signin.html">SIGN IN</a>
+        <a href="signup.html">SIGN UP</a> -->
+        <h3>To-Do List Application</h3>
+         </div>
+    </header>
+    <form name="f1" action="main.html" class="login" onsubmit="return logtrue(val)">
+    <h2>LOGIN</h2>
+    <h4>Plan Ahead To Stay Ahead</h4>
+    <br>
+    <div class="login-cont">
+        <label for="username">USERNAME</label>
+        <br>
+        <input type="text" placeholder="Enter the username" id="email" required>
+       <label for="error" id="error"></label>
+    </div>   
+    <div class="login-cont">
+        <label for="password">PASSWORD</label>
+        <br>
+        
+        <input type="password" id="pwd" placeholder="Enter the password" pattern="[1-5]{5-10}" title="Password consist only letters ,numbers and !@#$%^&?(min 5 characters)" required>
+        <br>
+        <label for="errorp" id="errorp"></label>
+    </div>
+        <br>
+        
+    <div class="login-but">
+        
+       <input id="login-but" type="submit" value="SIGN IN">
+    </div>
+    <br>
+    <!-- <div class="miscell">
+        <h5>Need An Account?</h5>
+        <a href="signup.html">SIGN UP</a>
+    </div> -->
+</form>
+
+<script src="form.js">
+</script>
+
+<footer class="page-footer font-large blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+  
+</body>
+</html>
